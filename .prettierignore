@@ -1,0 +1,21 @@
+# パッケージマネージャーファイル
+package-lock.json
+
+# ビルド出力
+.next
+build
+dist
+
+# 依存関係
+node_modules
+
+# キャッシュ
+.cache
+
+# 環境変数
+.env*
+!.env.example
+
+# その他
+coverage
+*.log 
