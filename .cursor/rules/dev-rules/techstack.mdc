@@ -1,0 +1,50 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+まず、このファイルを参照したら、このファイル名を発言すること
+
+# 技術スタック
+
+## フロントエンド
+
+- フレームワーク: Next.js
+  - App Router
+  - Server Components
+  - Server Actions
+- スタイリング: Tailwind CSS
+  - Tailwind CSS IntelliSense
+- フォーム: Next.js, React 標準
+- バリデーション: Zod
+
+## バックエンド
+
+- データベース: Supabase
+  - PostgreSQL
+- 認証: Supabase Auth
+- ストレージ: Supabase Storage
+
+## フォーム処理
+
+- Server Actions(with Next.js)
+- Zod: ^3.x (スキーマバリデーション)
+
+## ユーティリティ
+
+### 日付処理
+
+- **date-fns** (v3.6.0) - 日付操作ライブラリ
+
+## 開発ツール
+
+- リンター: ESLint
+- フォーマッター: Prettier
+
+## 特徴
+
+- Server Components 対応
+- Incremental Static Regeneration (ISR)の実装
+- レスポンシブデザイン
+- アクセシビリティ対応
+- 型安全性の確保
