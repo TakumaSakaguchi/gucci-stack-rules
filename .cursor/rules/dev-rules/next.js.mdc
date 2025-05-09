@@ -108,8 +108,6 @@ src/
 ## 推奨パッケージ
 
 - `@supabase/supabase-js`: Supabaseクライアント
-- `zod`: バリデーション
-- `react-hook-form`: フォーム管理
 
 ## 開発フロー
 

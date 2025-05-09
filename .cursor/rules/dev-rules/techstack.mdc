@@ -16,7 +16,6 @@ alwaysApply: true
 - スタイリング: Tailwind CSS
   - Tailwind CSS IntelliSense
 - フォーム: Next.js, React 標準
-- バリデーション: Zod
 
 ## バックエンド
 
@@ -28,7 +27,6 @@ alwaysApply: true
 ## フォーム処理
 
 - Server Actions(with Next.js)
-- Zod: ^3.x (スキーマバリデーション)
 
 ## ユーティリティ
 
