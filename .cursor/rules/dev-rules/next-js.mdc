@@ -19,10 +19,16 @@ src/
 │   ├── auth/             # 認証関連コンポーネント
 │   └── layouts/          # レイアウトコンポーネント
 ├── lib/                  # ユーティリティ関数とライブラリ
-│   ├── actions/          # Server Actions
-│   └── supabase.ts       # Supabaseクライアント
+│   └── actions/          # Server Actions
+├── middleware.ts         # Next.jsのミドルウェア
+├── supabase/            # Supabase関連のファイル
+│   └── migrations/      # データベースマイグレーションファイル
 ├── types/                # TypeScript型定義
-└── validations/          # バリデーションスキーマ
+└── utils/               # ユーティリティ関数
+    └── supabase/        # Supabase関連のユーティリティ
+        ├── client.ts    # クライアントサイドのSupabase設定
+        ├── middleware.ts # ミドルウェアのSupabase設定
+        └── server.ts    # サーバーサイドのSupabase設定
 ```
 
 ## ベストプラクティス
@@ -98,16 +104,11 @@ src/
 - CSPヘッダーの適切な設定
 - 入力値のバリデーション（特にサーバーサイド）
 
-### 8. デプロイメント
-
-- 本番環境では本番ビルドを使用
-- 環境ごとの適切な環境変数設定
-- パフォーマンスモニタリングの実装
-- エラーログの監視
-
 ## 推奨パッケージ
 
 - `@supabase/supabase-js`: Supabaseクライアント
+- `@supabase/ssr`: Supabaseのサーバーサイドレンダリングサポート
+- `tailwindcss`: ユーティリティファーストのCSSフレームワーク
 
 ## 開発フロー
 
